@@ -1,21 +1,15 @@
+function writeCards(name) {
+    let newArray = [];
+     for (let i = 0; name.length > i; i++) {
+         newArray.push((`Thank you, ${name[i]}, for the wonderful surprise gift!`))
+     }
+     return newArray;
+ }
 
-
-
-function writeCards(names) {
-    let message = [];
-    for (let i = 0; i < names.length; i++) {
-    let array = `Thank you, ${names[i]}, for the wonderful surprise gift!`;
-    message.push(array);
+ function countDown(num) {
+    while ( num >= 0) {
+        console.log(num);
+        num--;
+  
     }
-    return message; 
-}
-
-function countDown(number) {
-    while (number >= 0) {
-        console.log(number);
-        number--;
-        
-    }
-   
-
-};
+ }
